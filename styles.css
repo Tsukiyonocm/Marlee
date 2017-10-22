@@ -1,0 +1,240 @@
+/* Simple Resets */
+html, body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*------------------------------------------------------------------
+[1. NavBar - Primary]
+*/
+
+div.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+nav {
+    background-color: transparent;
+    float: left;
+    width: 100%;
+    outline: none;
+    position: fixed;
+}
+
+nav h1 {
+    padding-left: .5em;
+    color: #000;
+    text-transform: uppercase;
+    float: left;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    transition: .7s;
+}
+
+nav ul li a {
+    padding: 1em;
+    color: #000;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+i.fa-bars {
+    color: white;
+    float: right;
+    font-size: 28px;
+    padding: 5px;
+    margin-top: 20px;
+    display: none;
+}
+
+
+/*------------------------------------------------------------------
+[1.5 NavBar - Hidden Overlay]
+*/
+
+div.overlay {
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: .7s;
+}
+
+/* Allows Hidden Nav to be displayed */
+div.overlay.toggle {
+    display: block;
+}
+
+i.fa-times {
+    color: #fff;
+    font-size: 2.5em;
+    padding: 5px;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    display: block;
+}
+/* Shuts down the FA Icons on click with JS */
+i.fa-bars.closed,
+i.fa-times.closed {
+    display: none;
+    transition: .7s;
+}
+
+div.overlay ul{
+    padding: 0;
+    margin: 100px 0 0 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+div.overlay ul li {
+    display: block;
+}
+
+div.overlay ul li a {
+    font-size: 1.25em;
+    padding: 1em;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*------------------------------------------------------------------
+[2 Hero Image]
+*/
+
+.hero-section {
+    width: 100%;
+    height: 50em;
+    margin: auto;
+    background: url("img/alexandru-tudorache-17852.jpg") no-repeat 50% 50%;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+/*------------------------------------------------------------------
+[2.5 Quote Text]
+*/
+
+#quoteBox .container-fluid {
+    padding-top: 9em;
+    text-align: center;    
+}
+
+.toggleOn {
+    opacity: 1;
+    transition: 3s;
+}
+
+.toggleOff{
+    opacity: 0;
+}
+
+#content {
+    height: 35em;
+}
+
+p#quote {
+    max-width: 25em;
+    color: white;
+    text-shadow: 0 0 3px #000;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 40px auto;
+    text-transform: lowercase;
+    line-height: 145%;
+    font-size: 2.1em;
+    font-variant: small-caps;
+}
+
+/*------------------------------------------------------------------
+[9 Footer]
+*/
+
+footer {
+    background-color: #000;
+    height: 6em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    margin-bottom: .5em;
+}
+.social-media-contact {
+    color: white;
+    text-align: center;
+}
+
+.social-media-contact i {
+    padding:  0 .5em;
+    margin: 0px 10px;
+}
+
+.social-media-contact .fa {
+    font-size: 1.5em;
+}
+
+.footerNav ul {
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.footerNav ul li {
+    display: inline;
+    color: #fff;
+}
+
+.footerNav ul li a {
+    color: #fff;
+    padding: .4em;
+    text-decoration: none;
+}
+
+.footerNav li:not(:first-child):before {
+    content: "|";
+    padding: .3em;
+}
+/*------------------------------------------------------------------
+[10 Media Queries]
+*/
+
+/* Navbar */
+@media all and (max-width: 768px){
+    nav ul {
+        display: none;
+    }
+    
+    i.fa-bars {
+        display: block;
+    }
+}
