@@ -20,11 +20,20 @@ div.container {
 }
 
 nav {
-    background-color: transparent;
     float: left;
     width: 100%;
     outline: none;
     position: fixed;
+}
+
+/* used to make Navbar change color on Scroll */
+nav.transparent {
+    background-color: transparent;
+}
+
+nav.colored {
+    background-color: white;
+    transition: 1s;
 }
 
 nav h1 {
@@ -190,6 +199,7 @@ footer {
 footer p {
     margin-bottom: .5em;
 }
+
 .social-media-contact {
     color: white;
     text-align: center;
@@ -207,6 +217,7 @@ footer p {
 .footerNav ul {
     text-transform: uppercase;
     list-style-type: none;
+    margin-right: 3em;
 }
 
 .footerNav ul li {

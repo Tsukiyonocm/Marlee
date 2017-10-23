@@ -1,7 +1,10 @@
+//Variables 
 var overlay = document.querySelector(".fa-bars");
 var times = document.querySelector(".fa-times");
 var menuSelect = document.querySelector("#hiddenNav")
 var quoteFade = document.querySelector(".toggleOff")
+var navScroll = document.querySelector("#navbar");
+
 
 //Hamburger Menu Display Overlay
 overlay.addEventListener("click", function(){
@@ -35,3 +38,17 @@ function onStart() {
 }
 
 window.onload = onStart;
+
+
+//Change Navbar Opacity on Scroll
+window.onscroll = function (){
+    if (document.body.scrollTop >= 100){
+        navScroll.classList.add("colored");
+        navScroll.classList.remove("transparent");
+        alert("working");
+    }
+    else {
+        navScroll.classList.add("transparent");
+        navScroll.classList.remove("colored");
+    }
+};
