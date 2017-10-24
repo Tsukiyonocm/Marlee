@@ -42,10 +42,9 @@ window.onload = onStart;
 
 //Change Navbar Opacity on Scroll
 window.onscroll = function (){
-    if (document.body.scrollTop >= 100){
+    if (window.pageYOffset >= 50){
         navScroll.classList.add("colored");
         navScroll.classList.remove("transparent");
-        alert("working");
     }
     else {
         navScroll.classList.add("transparent");

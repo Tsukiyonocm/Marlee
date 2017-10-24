@@ -29,11 +29,13 @@ nav {
 /* used to make Navbar change color on Scroll */
 nav.transparent {
     background-color: transparent;
+    transition: 1.5s;
 }
 
+/* used to make Navbar change color on Scroll */
 nav.colored {
     background-color: white;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 nav h1 {
