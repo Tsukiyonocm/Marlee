@@ -3,7 +3,7 @@ var overlay = document.querySelector(".fa-bars");
 var times = document.querySelector(".fa-times");
 var menuSelect = document.querySelector("#hiddenNav")
 var quoteFade = document.querySelector(".toggleOff")
-var navScroll = document.querySelector("#navbar");
+var navScroll = document.querySelector("#navbarPrime");
 
 
 //Hamburger Menu Display Overlay

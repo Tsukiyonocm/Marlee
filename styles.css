@@ -34,7 +34,8 @@ nav.transparent {
 
 /* used to make Navbar change color on Scroll */
 nav.colored {
-    background-color: white;
+    background-color: rgba(28, 28, 28, 0.9);
+    color: #fff;
     transition: 1.5s;
 }
 
@@ -71,6 +72,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+
 i.fa-bars {
     color: white;
     float: right;
@@ -78,6 +80,7 @@ i.fa-bars {
     padding: 5px;
     margin-top: 20px;
     display: none;
+    text-align: center;
 }
 
 
@@ -86,10 +89,10 @@ i.fa-bars {
 */
 
 div.overlay {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(28, 28, 28, 0.9);
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: none;
     transition: .7s;
 }
@@ -101,13 +104,14 @@ div.overlay.toggle {
 
 i.fa-times {
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 5px;
     position: absolute;
     right: 30px;
-    top: 20px;
+    top: 16px;
     display: block;
 }
+
 /* Shuts down the FA Icons on click with JS */
 i.fa-bars.closed,
 i.fa-times.closed {
@@ -144,7 +148,7 @@ div.overlay ul li a {
     width: 100%;
     height: 50em;
     margin: auto;
-    background: url("img/alexandru-tudorache-17852.jpg") no-repeat 50% 50%;
+    background: url("img/alexandru-tudorache-web.jpg") no-repeat 50% 50%;
     display: table;
     top: 0;
     background-size: cover;
@@ -236,6 +240,34 @@ footer p {
 .footerNav li:not(:first-child):before {
     content: "|";
     padding: .3em;
+}
+
+/*------------------------------------------------------------------
+[9.5 Footer Social Media Contact Links]
+*/
+
+.fa-facebook-official {
+    color: #3b5998;
+}
+
+.fa-linkedin {
+    color: #007bb6;
+}
+
+.fa-instagram {
+    color: #bc2a8d;
+}
+
+.fa-envelope {
+    color: #d3d3d3;
+}
+
+.fa-facebook-official:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover,
+.fa-envelope:hover{
+    font-weight: bold;
+    color: white;
 }
 /*------------------------------------------------------------------
 [10 Media Queries]
